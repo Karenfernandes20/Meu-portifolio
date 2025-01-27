@@ -1,17 +1,17 @@
-*{
+body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    height: 2000px;
 }
 
 
 .caixa-principal{
     height: 100vh;
     width: 100%;
-    background-image: url(./img/Fundo\ universo.jpeg);
     background-size: cover;
     background-position: center;
-    background-color: #191919;
+    background-color: black;
 }
 
 nav {
@@ -24,13 +24,13 @@ nav {
 }
 
 .portifolio {
-    color:#ffffff;
+    color: white;
     font-size: 35px;
     font-weight: 500px;
 }
 
 .portifolio span{
-    color: #f9004d
+    color: rgb(138, 11, 138);
 
 }
 
@@ -45,23 +45,27 @@ li{
 }
 
 li:hover {
-    color: #f9004d;
+    color: rgb(138, 11, 138);
     transition: 0.5s;
+
 }
 
 .meu-nome{
     position: absolute;
     top: 50%;
     left: 7%;
+    padding: 100px;
+    margin-top: 60px;
+    height: 500px;
 }
 
 h1 {
-    color:#f9004d;
+    color:rgb(138, 11, 138);
     font-size: 75px;
 }
 
 h1 span{
-    color:#f9004d
+    color:rgb(138, 11, 138);
 }
 
 .meu-nome h3{
@@ -72,15 +76,14 @@ h1 span{
 section {
     display: flex;
     align-items: center;
-    padding: 60px, 15%
-    background-color: #000;
-    background-image: url(./img/Fundo\ universo.jpeg);
+    padding: 60px, 15%;
+    background-color: black;
 }
 
 section img {
     height: 300px;
     border-radius: 500%;
-    border: 2px solid #f9004d;
+    border: 2px solid :rgb(138, 11, 138);
     margin-right: 30px;
 }
 
@@ -111,4 +114,38 @@ section div button:hover{
     background-color: black;
     border: 3px solid #e4a9bb;
     transition: 0.5s;
+}
+
+section .sumir {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+
+}
+
+nav .sumir{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+section .aparecer{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+}
+
+img#geradordesenha {
+    width: 500px;
+    border-radius: 0%;
+}
+
+section#Projetos h2{
+    color:white;
+    text-align: center;
+    padding: %;
+}
+
+html{
+    scroll-behavior: smooth;
 }
